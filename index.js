@@ -119,6 +119,9 @@ app.put("/users/:id", (req, res) => {
     });
 });
 
+app.get("/", (req, res) => {
+    res.send("User Management API is running");
+});
 
 app.listen( PORT , () =>{
     console.log(`app started listening on ${PORT}`)
